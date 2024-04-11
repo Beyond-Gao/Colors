@@ -1,0 +1,59 @@
+
+.bookMark {
+  display: flex;
+  justify-content: center;
+  /* pointer-events: none; */
+}
+
+.bookMark .app{
+  display: flex;
+  /* justify-content: flex-start;
+  padding-top: 5rem; */
+  padding-top: 2.3rem;
+  flex-direction: column;
+}
+
+.bookMark .app .name {
+  padding-top: 5.2rem;
+  writing-mode: vertical-lr;
+  font-size: 9rem;
+  font-family: 'lixuke';
+  color: white;
+  letter-spacing: 0.3rem;
+  cursor: default;
+}
+
+.bookMark .app .poem {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  padding-top: 3rem;
+  cursor: default;
+  font-family: '楷体';
+}
+
+.poem .poemTitle{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.verse{
+  writing-mode: vertical-rl; 
+  color: white;
+  font-size: 1.25rem;
+  letter-spacing: 0.3rem;
+}
+
+.poem .verse div:last-child{
+  padding-top: 1.1rem;
+  padding-right: 0.1rem;
+  /* color: black; */
+}
+
+.poemTitle div {
+  writing-mode: vertical-rl; 
+  color: white;
+  font-size: 0.8rem;
+  align-self: flex-end;
+  letter-spacing: 0.2rem;
+}

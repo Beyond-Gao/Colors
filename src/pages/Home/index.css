@@ -1,0 +1,79 @@
+
+/* body {
+  transition: all 0.3s;
+} */
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  transition: background-color 1.77s;
+  transition: background-color 1.77s ease-in;
+
+  background-image: url('../../assets/img/bg.texture.png'),url('../../assets/img/bg.top.png');
+  background-repeat:repeat,repeat-x;
+  /* background-position:0 0,0 -40px;
+  background-size:auto,auto 1.5rem; */
+}
+
+.home .colorSelect {
+  /* background-color: #f47983; */
+  width: 45%;
+  height: 100vh;
+  /* max-height: 100%; */
+  /* flex-grow: 1; */
+  *::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+  /* overflow-y: scroll;
+  overscroll-behavior: contain; */
+}
+
+.home .colorSpace {
+  width: 27.5%;
+  height: 100vh;
+  /* background-color: #789262; */
+  /* flex-grow: 1; */
+}
+
+.home .bookMark {
+  /* background-color: #f2be45; */
+  width: 27.5%;
+  height: 100vh;
+  /* flex-grow: 1; */
+}
+
+
+.home .colorGroupSelect {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+}
+
+/* .peityContainer {
+  position: relative;
+} */
+
+.percentage {
+  font-family: sans-serif;
+  font-size: 1em;
+  text-anchor: middle;
+  font-weight: bold;
+  dominant-baseline: middle;
+  fill: white;
+}
+
+/* .peityContainer {
+  position: relative;
+}
+
+.peityContainer p{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+} */
+

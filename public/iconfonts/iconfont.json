@@ -1,0 +1,93 @@
+{
+  "id": "4502919",
+  "name": "colors",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3868272",
+      "name": "节点管理",
+      "font_class": "jiedianguanli",
+      "unicode": "eb64",
+      "unicode_decimal": 60260
+    },
+    {
+      "icon_id": "14190742",
+      "name": "圆环透明度-01",
+      "font_class": "yuanhuantoumingdu-01",
+      "unicode": "e6fb",
+      "unicode_decimal": 59131
+    },
+    {
+      "icon_id": "37830265",
+      "name": "圆环_ring",
+      "font_class": "yuanhuan_ring2",
+      "unicode": "e772",
+      "unicode_decimal": 59250
+    },
+    {
+      "icon_id": "26925405",
+      "name": "icon_颜色标记",
+      "font_class": "icon_yansebiaoji",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "27601441",
+      "name": "颜色，色彩",
+      "font_class": "a-yansesecai",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "32772292",
+      "name": "fourColour",
+      "font_class": "fourColour",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "34962726",
+      "name": "颜色通道-copy",
+      "font_class": "yansetongdao",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "36528415",
+      "name": "颜色",
+      "font_class": "yanse3",
+      "unicode": "e8ba",
+      "unicode_decimal": 59578
+    },
+    {
+      "icon_id": "37870600",
+      "name": "ic_颜色卡片",
+      "font_class": "ic_yansekapian",
+      "unicode": "e712",
+      "unicode_decimal": 59154
+    },
+    {
+      "icon_id": "39151088",
+      "name": "颜色",
+      "font_class": "yanse4",
+      "unicode": "e7c4",
+      "unicode_decimal": 59332
+    },
+    {
+      "icon_id": "12193157",
+      "name": "cmyk",
+      "font_class": "cmyk",
+      "unicode": "eb9a",
+      "unicode_decimal": 60314
+    },
+    {
+      "icon_id": "17583200",
+      "name": "cmyk模式",
+      "font_class": "cmykmoshi",
+      "unicode": "ec96",
+      "unicode_decimal": 60566
+    }
+  ]
+}

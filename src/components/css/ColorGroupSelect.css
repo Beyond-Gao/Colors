@@ -1,0 +1,17 @@
+.colorGroupSelect .app {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.colorGroupSelect .app .item {
+  padding-right: 5rem;
+}
+
+.colorGroupSelect .app .shadow{
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.colorGroupSelect svg {
+  margin-left: 0.9rem;
+}

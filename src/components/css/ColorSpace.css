@@ -1,0 +1,94 @@
+.colorSpace {
+  display: flex;
+  justify-content: center;
+  /* pointer-events: none; */
+}
+
+.colorSpace .app{
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  padding-top: 5.9rem;
+  flex-direction: column;
+  /* opacity: 1; */
+  /* background-color: rgba(0, 0, 0, 0.1); */
+}
+
+.cmyk .item, .rgb .item {
+  /* height: 10rem; */
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  cursor: default;
+  /* border-radius: 7px; */
+  /* background-color: red; */
+  /* background-color: rgba(0, 0, 0, 0.05); */
+}
+
+.colorSpace .app .shadow{
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.item p{
+  color: white;
+  font-size: 0.7rem;
+  padding-top: 0.5rem;
+}
+
+.rgb .item{
+  /* padding: 1rem 0; */
+  overflow: hidden;
+}
+
+.rgb .numerical{
+  /* display: flex; */
+  float: right;
+  padding: 1rem 0.25rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.colorSpace .rgb{
+  transition: opacity 0.3s ease-in-out;
+}
+
+.colorSpace .rgb:hover {
+  opacity: 0.6;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+}
+
+
+.colorSpace .hex {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  color: #e3f9fd;
+  cursor: default;
+  padding-top: 2rem;
+  /* cursor: pointer; */
+}
+
+.icon-cmyk, .icon-rgb, .icon-hex{
+  font-size: 1.23rem;
+  cursor: pointer;
+}
+
+.copyTip {
+  padding-top: 3rem;
+}
+
+
+.colorSpace .icpContainer {
+  position: absolute;
+  bottom: 1.7rem;
+  font-size: 0.7rem;
+  width: 200%;
+  z-index: 1;
+}
+
+.colorSpace .icp a {
+  text-decoration: none;
+  outline: none;
+  color: #e3f9fd;
+  
+}
+
