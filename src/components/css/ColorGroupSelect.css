@@ -1,12 +1,19 @@
+@media screen and (max-width: 650px) {
+  .home .colorGroupSelect {
+    bottom: 3.3rem;
+    right: 1.5rem;
+  }
+}
+
 .colorGroupSelect .app {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
 }
 
-.colorGroupSelect .app .item {
+/* .colorGroupSelect .app .item {
   padding-right: 5rem;
-}
+} */
 
 .colorGroupSelect .app .shadow{
   background-color: rgba(0, 0, 0, 0.02);

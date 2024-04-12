@@ -25,6 +25,12 @@ const initialValue = {
     currColor: Colors[7].colors[0],
     textColor: "white"
 }
+// document.body.style.backgroundColor = initialValue.currColor.hex;
+document.body.style.transition = 'background-color 1.77s ease-in';
+document.body.style.backgroundImage = 'url("../../assets/img/bg.texture.png"), url("../../assets/img/bg.top.png")';
+document.body.style.backgroundRepeat = 'repeat, repeat-x';
+document.body.style.backgroundSize = 'auto, auto 2rem';
+document.body.style.backgroundColor = initialValue.currColor.hex;
 
 const reducer = (state: any, action: any) => {
     const { type, payload } = action;
@@ -32,6 +38,8 @@ const reducer = (state: any, action: any) => {
     switch (type) {
         case "update_curr_color":
             let c = state.currColorGroup.colors.find((c: any) => c.id === payload.id)
+            document.body.style.backgroundColor = c.hex;
+            // document.body.style.backgroundColor = obj.hex;
             return { ...state, currColor: c, textColor: getContrastTextColor(c.RGB) };
 
         case "update_color_group":

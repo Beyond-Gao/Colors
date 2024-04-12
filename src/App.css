@@ -5,6 +5,62 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 16px; /* 设置一个基准字体大小 */
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px; /* 在较小的屏幕上使用较小的字体大小 */
+  }
+}
+
+@media screen and (max-width: 633px) {
+  html {
+    font-size: 9px; /* 在较小的屏幕上使用较小的字体大小 */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 8px; /* 在较小的屏幕上使用较小的字体大小 */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 4.5px; /* 在较小的屏幕上使用较小的字体大小 */
+  }
+}
+
+@media screen and (max-height: 798px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-height: 590px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+
+
+
 /* @font-face {  
   font-family: lixuke;  
   src: url('./assets/fonts/LiXuKeMaoBiXingShu-1.ttf');

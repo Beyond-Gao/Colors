@@ -3,16 +3,32 @@ import ColorSelect from "@/components/ColorSelect";
 import ColorSpace from "@/components/ColorSpace";
 
 import './index.css'
-import { useColor } from "@/contexts/ColorContext";
+import { useEffect, useRef } from "react";
+import Loading from "@/components/Loading";
 import ColorGroupSelect from "@/components/ColorGroupSelect";
 
 const Home = () => {
 
+  const loading: any = useRef(null)
 
-  const { currColor } = useColor()
+  useEffect(() => {
+    if (loading.current) {
+      const timer = setTimeout(() => {
+        loading.current.classList.add('loaded');
+      }, 1700);
+      return () => {
+        clearTimeout(timer);
+      };
+    }
+  }, []);
 
   return (
-    <div className="home" style={{ backgroundColor: currColor.hex }}>
+    <div className="home">
+      {/* <div className="loading" ref={loading}><Spin /></div> */}
+      <div className="loading" ref={loading}>
+        <Loading />
+      </div>
+
       <ColorSelect />
       <ColorSpace />
       <Bookmark />

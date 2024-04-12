@@ -30,11 +30,11 @@ const ColorCircle: React.FC<Props> = ({ color, percent, width, strokeWidth, spac
             },
           }}
         >
-          <Progress strokeWidth={strokeWidth} className="progressCircle" type="circle" percent={percent} format={(percent) => space ? percent : ''} strokeColor={color} success={{ strokeColor: "white", percent: 0 }} size={width} trailColor="#eee" />
+          <Progress showInfo={false} strokeWidth={strokeWidth} className="progressCircle" type="circle" percent={percent} format={(percent) => space ? percent : ''} strokeColor={color} success={{ strokeColor: "white", percent: 0 }} size={width} trailColor="#eee" />
 
         </ConfigProvider>
         :
-        <Progress strokeWidth={strokeWidth} className="progressCircle" type="circle" percent={percent} format={(percent) => space ? percent : ''} strokeColor={color} success={{ strokeColor: "white", percent: 0 }} size={width} trailColor="#eee" />
+        <Progress showInfo={false} strokeWidth={strokeWidth} className="progressCircle" type="circle" percent={percent} format={(percent) => space ? percent : ''} strokeColor={color} success={{ strokeColor: "white", percent: 0 }} size={width} trailColor="#eee" />
       }
     </>
 

@@ -6,6 +6,7 @@ import { useMemo } from "react";
 import ICP from "@/components/ICP";
 import ColorCircle from "./ColorCircle";
 import { copyx } from '@/hooks/useColors'
+import useScreenWidth from '@/hooks/useScreen'
 import { useColor } from "@/contexts/ColorContext";
 
 const ColorSpace = () => {
@@ -36,6 +37,8 @@ const ColorSpace = () => {
     hex: currColor.hex,
   }), [currColor]);
 
+  const { spaceWidth } = useScreenWidth()
+
   return (
     <div className="colorSpace">
 
@@ -48,19 +51,19 @@ const ColorSpace = () => {
             {/* <div className="item"> */}
             <div className="item">
               <p>C</p>
-              <ColorCircle color='#0d5661' bgc={currColor.RGB} width={65} strokeWidth={6} percent={currColor.CMYK[0]} space={true} />
+              <ColorCircle color='#0d5661' bgc={currColor.RGB} width={spaceWidth} strokeWidth={6} percent={currColor.CMYK[0]} space={true} />
             </div>
             <div className="item">
               <p>M</p>
-              <ColorCircle color='#cb1b45' bgc={currColor.RGB} width={65} strokeWidth={6} percent={currColor.CMYK[1]} space={true} />
+              <ColorCircle color='#cb1b45' bgc={currColor.RGB} width={spaceWidth} strokeWidth={6} percent={currColor.CMYK[1]} space={true} />
             </div>
             <div className="item">
               <p>Y</p>
-              <ColorCircle color='#ffc408' bgc={currColor.RGB} width={65} strokeWidth={6} percent={currColor.CMYK[2]} space={true} />
+              <ColorCircle color='#ffc408' bgc={currColor.RGB} width={spaceWidth} strokeWidth={6} percent={currColor.CMYK[2]} space={true} />
             </div>
             <div className="item">
               <p>K</p>
-              <ColorCircle color='#1c1c1c' bgc={currColor.RGB} width={65} strokeWidth={6} percent={currColor.CMYK[3]} space={true} />
+              <ColorCircle color='#1c1c1c' bgc={currColor.RGB} width={spaceWidth} strokeWidth={6} percent={currColor.CMYK[3]} space={true} />
             </div>
 
           </div>

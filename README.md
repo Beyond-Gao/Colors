@@ -2,6 +2,7 @@
 
 ### 特性
 + Vite + React + Ts
++ 移动端适配
 
 ![](/show/home.png)
 
@@ -13,9 +14,10 @@ npm run dev
 ```
 
 ### TODO
-+ 移动端适配
-+ 数字滚动
-+ 页面优化
+- 数字滚动
+- 页面优化
+- 颜色种类扩展
+- 增加配图
 
 ### 参考
 + https://www.zhongguose.com/
