@@ -1,8 +1,25 @@
 import pinyin from 'pinyin';
 import convert from 'color-convert';
+import { message } from 'antd';
 
 import colors from '@/assets/colors.json';
 
+
+const copyx = (str: string) => {
+  navigator.clipboard.writeText(str)
+  message.success({
+    type: 'success',
+    content: '颜色编码已复制',
+    className: 'copyTip',
+    duration: 0.9,
+  });
+}
+
+const getContrastTextColor = (rgb: number[]) => {
+  const [r, g, b] = rgb
+  const yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+  return yiq >= 128 ? '#000000' : '#ffffff';
+}
 
 const Colors = colors.map((set) => {
   set.RGB = convert.hex.rgb(set.hex);
@@ -34,5 +51,5 @@ const Colors = colors.map((set) => {
 // })
 // console.log(names)
 
-export {Colors};
+export {Colors, getContrastTextColor, copyx};
 

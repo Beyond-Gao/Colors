@@ -1,43 +1,40 @@
-import { useColor } from "@/contexts/ColorContext";
-import ColorCircle from "./ColorCircle";
-
-import { Tooltip, message } from 'antd';
+import { Tooltip } from 'antd';
+import { useSpring, animated } from '@react-spring/web'
 
 import './css/ColorSpace.css'
-import { useEffect, useState } from "react";
+import { useMemo } from "react";
 import ICP from "@/components/ICP";
+import ColorCircle from "./ColorCircle";
+import { copyx } from '@/hooks/useColors'
+import { useColor } from "@/contexts/ColorContext";
 
 const ColorSpace = () => {
 
-  // const [messageApi, contextHolder] = message.useMessage();
+  const { currColor, textColor } = useColor()
 
-  const { currColor } = useColor()
-  const [colorAttr, setColorAttr] = useState({
-    cmyk: "cmyk(0,0,0,0)",
-    rgb: "rgb(0,0,0)",
-    hex: "#FFFFFF"
-  })
+  const { r } = useSpring({
+    from: { r: 0 },
+    r: currColor.RGB[0],
+    config: { duration: 1370, tension: 280, friction: 60 },
+  });
 
-  const copy = (str: string) => {
-    navigator.clipboard.writeText(str)
-    message.success({
-      type: 'success',
-      content: '颜色编码已复制',
-      className: 'copyTip',
-      duration: 0.9,
-    });
-  }
+  const { g } = useSpring({
+    from: { g: 0 },
+    g: currColor.RGB[1],
+    config: { duration: 1370 },
+  });
 
-  useEffect(() => {
-    // console.log(currColor)
-    setColorAttr({
-      cmyk: `cmyk(${currColor.CMYK[0]},${currColor.CMYK[1]},${currColor.CMYK[2]},${currColor.CMYK[3]})`,
-      rgb: `rgb(${currColor.RGB[0]},${currColor.RGB[1]},${currColor.RGB[2]})`,
-      hex: currColor.hex,
-    })
+  const { b } = useSpring({
+    from: { b: 0 },
+    b: currColor.RGB[2],
+    config: { duration: 1370 },
+  });
 
-  }, [currColor])
-  // console.log(currColor)
+  const colorAttr = useMemo(() => ({
+    cmyk: `cmyk(${currColor.CMYK[0]},${currColor.CMYK[1]},${currColor.CMYK[2]},${currColor.CMYK[3]})`,
+    rgb: `rgb(${currColor.RGB[0]},${currColor.RGB[1]},${currColor.RGB[2]})`,
+    hex: currColor.hex,
+  }), [currColor]);
 
   return (
     <div className="colorSpace">
@@ -46,45 +43,55 @@ const ColorSpace = () => {
 
 
         <div className="shadow">
-          <div className="cmyk">
+          <div className="cmyk" style={{ color: textColor }}>
 
+            {/* <div className="item"> */}
             <div className="item">
               <p>C</p>
-              <ColorCircle color='#0d5661' process={currColor.CMYK[0]} width={70} r={30} space={true} />
+              <ColorCircle color='#0d5661' bgc={currColor.RGB} width={65} strokeWidth={6} percent={currColor.CMYK[0]} space={true} />
             </div>
             <div className="item">
               <p>M</p>
-              <ColorCircle color='#cb1b45' process={currColor.CMYK[1]} width={70} r={30} space={true} />
+              <ColorCircle color='#cb1b45' bgc={currColor.RGB} width={65} strokeWidth={6} percent={currColor.CMYK[1]} space={true} />
             </div>
             <div className="item">
               <p>Y</p>
-              <ColorCircle color='#ffc408' process={currColor.CMYK[2]} width={70} r={30} space={true} />
+              <ColorCircle color='#ffc408' bgc={currColor.RGB} width={65} strokeWidth={6} percent={currColor.CMYK[2]} space={true} />
             </div>
             <div className="item">
               <p>K</p>
-              <ColorCircle color='#1c1c1c' process={currColor.CMYK[3]} width={70} r={30} space={true} />
+              <ColorCircle color='#1c1c1c' bgc={currColor.RGB} width={65} strokeWidth={6} percent={currColor.CMYK[3]} space={true} />
             </div>
 
           </div>
 
-          <div className="rgb">
+          <div className="rgb" style={{ color: textColor }}>
             <div className="item">
               <p>R</p>
               <div className="numerical">
-                {currColor.RGB[0]}
+                {/* {currColor.RGB[0]} */}
+                <animated.span>
+                  {r.to(x => (x).toFixed(0))}
+                </animated.span>
+
               </div>
             </div>
             <div className="item">
               <p>G</p>
               <div className="numerical">
-                {currColor.RGB[1]}
-
+                {/* {currColor.RGB[1]} */}
+                <animated.span>
+                  {g.to(x => (x).toFixed(0))}
+                </animated.span>
               </div>
             </div>
             <div className="item">
               <p>B</p>
               <div className="numerical">
-                {currColor.RGB[2]}
+                {/* {currColor.RGB[2]} */}
+                <animated.span>
+                  {b.to(x => (x).toFixed(0))}
+                </animated.span>
               </div>
             </div>
           </div>
@@ -94,19 +101,19 @@ const ColorSpace = () => {
         <div className="hex">
 
           <Tooltip placement="bottom" title={colorAttr.cmyk}>
-            <svg className="icon icon-cmyk" aria-hidden="true" onClick={() => copy(colorAttr.cmyk)}>
+            <svg className="icon icon-cmyk" aria-hidden="true" onClick={() => copyx(colorAttr.cmyk)}>
               <use xlinkHref="#icon-cmykmoshi"></use>
             </svg>
           </Tooltip>
 
           <Tooltip placement="bottom" title={colorAttr.rgb}>
-            <svg className="icon icon-rgb" aria-hidden="true" onClick={() => copy(colorAttr.rgb)}>
+            <svg className="icon icon-rgb" aria-hidden="true" onClick={() => copyx(colorAttr.rgb)}>
               <use xlinkHref="#icon-a-yansesecai"></use>
             </svg>
           </Tooltip>
 
           <Tooltip placement="bottom" title={colorAttr.hex}>
-            <svg className="icon icon-hex" aria-hidden="true" onClick={() => copy(colorAttr.hex)}>
+            <svg className="icon icon-hex" aria-hidden="true" onClick={() => copyx(colorAttr.hex)}>
               <use xlinkHref="#icon-ic_yansekapian"></use>
             </svg>
           </Tooltip>
@@ -116,8 +123,8 @@ const ColorSpace = () => {
         <div className="icpContainer">
           <ICP />
         </div>
-        
-        
+
+
       </div>
     </div>
   );

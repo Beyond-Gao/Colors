@@ -1,6 +1,6 @@
-import './App.css'
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
+import './App.css'
 import Home from '@/pages/Home'
 import { ColorProvider } from './contexts/ColorContext';
 
@@ -15,6 +15,7 @@ function App() {
         </Routes>
       </Router>
     </ColorProvider>
+
 
 
   )

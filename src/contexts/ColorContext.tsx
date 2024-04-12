@@ -1,10 +1,12 @@
 import React, { ReactNode, createContext, useContext, useReducer } from "react";
 
+import { getContrastTextColor } from '@/hooks/useColors'
+
 import { Colors } from '@/hooks/useColors'
-import {ColorType, ColorGroupType} from '@/types'
+import { ColorType, ColorGroupType } from '@/types'
 
 
-interface ColorProviderProps{
+interface ColorProviderProps {
     children: ReactNode
 }
 
@@ -13,6 +15,7 @@ interface ContextProps {
     currColorGroup: ColorGroupType,
     updateCurrColor: (id: string) => void,
     updateColorGroup: (idx: string) => void,
+    textColor: string,
 }
 
 const ColorContext = createContext<ContextProps>({} as ContextProps)
@@ -20,6 +23,7 @@ const ColorContext = createContext<ContextProps>({} as ContextProps)
 const initialValue = {
     currColorGroup: Colors[7],
     currColor: Colors[7].colors[0],
+    textColor: "white"
 }
 
 const reducer = (state: any, action: any) => {
@@ -28,11 +32,11 @@ const reducer = (state: any, action: any) => {
     switch (type) {
         case "update_curr_color":
             let c = state.currColorGroup.colors.find((c: any) => c.id === payload.id)
-            return { ...state, currColor: c};
-        
+            return { ...state, currColor: c, textColor: getContrastTextColor(c.RGB) };
+
         case "update_color_group":
             // return { ...state, currColor: Colors[payload.idx].colors[0] , currColorGroup: Colors[payload.idx]};
-            return { ...state, currColorGroup: Colors[payload.idx]};
+            return { ...state, currColorGroup: Colors[payload.idx] };
 
         default:
             return state;
@@ -60,10 +64,6 @@ const ColorProvider: React.FC<ColorProviderProps> = ({ children }) => {
     </ColorContext.Provider>
 }
 
-// interface useColorReturn {
-//     currColor: ""
-// }
-
 const useColor = () => {
     const context = useContext(ColorContext)
     if (context === undefined) {
@@ -72,4 +72,4 @@ const useColor = () => {
     return context
 }
 
-export {ColorProvider, useColor}
+export { ColorProvider, useColor }

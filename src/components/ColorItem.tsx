@@ -5,6 +5,7 @@ import './css/ColorSelect.css'
 import { ColorType } from '@/types'
 import ColorCircle from './ColorCircle';
 import { useColor } from '@/contexts/ColorContext';
+import {getContrastTextColor} from '@/hooks/useColors'
 
 
 interface Props {
@@ -18,13 +19,15 @@ const ColorItem: React.FC<Props> = ({ color }) => {
 
   useEffect(() => {
 
-    if (color.id === currColor.id) {
-      scrollIntoView(colorEle.current!, {
-        behavior: 'smooth',
-        block: 'center',
-        scrollMode: 'if-needed'
-      });
-    }
+    setTimeout(() => {
+      if (color.id === currColor.id) {
+        scrollIntoView(colorEle.current!, {
+          behavior: 'smooth',
+          block: 'center',
+          scrollMode: 'if-needed'
+        });
+      }
+    },)
 
   }, [currColor])
 
@@ -37,13 +40,17 @@ const ColorItem: React.FC<Props> = ({ color }) => {
       <div className="show" style={{ backgroundColor: color.hex }}>
 
         <div className="cmyk">
-          <ColorCircle color='#0d5661' process={color.CMYK[0]} />
-          <ColorCircle color='#cb1b45' process={color.CMYK[1]} />
-          <ColorCircle color='#ffc408' process={color.CMYK[2]} />
-          <ColorCircle color='#1c1c1c' process={color.CMYK[3]} />
+          <ColorCircle width={35} strokeWidth={12} color='#0d5661' percent={color.CMYK[0]} />
+          <ColorCircle width={35} strokeWidth={12} color='#cb1b45' percent={color.CMYK[1]} />
+          <ColorCircle width={35} strokeWidth={12} color='#ffc408' percent={color.CMYK[2]} />
+          <ColorCircle width={35} strokeWidth={12} color='#1c1c1c' percent={color.CMYK[3]} />
+
+          {/* <ColorCircle color='#1c1c1c' percent={currColor.CMYK[3]}  space={true} /> */}
+
+
         </div>
 
-        <div className="desc">{color.name}</div>
+        <div className="desc"  style={{ color: getContrastTextColor(color.RGB) }}>{color.name}</div>
 
         {color.figure && <img className="figure" src={`/figure/${color.figure}`} alt="figure" />}
         {/* {color.figure && <img className="figure" src={require(`../assets/figure/${color.figure}`)} alt="figure" />} */}

@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  transition: background-color 1.77s;
+  /* transition: background-color 1.77s; */
   transition: background-color 1.77s ease-in;
 
   background-image: url('../../assets/img/bg.texture.png'),url('../../assets/img/bg.top.png');

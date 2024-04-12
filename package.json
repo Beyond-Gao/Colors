@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-spring/web": "^9.7.3",
     "@types/color-convert": "^2.0.3",
     "@types/pinyin": "^2.10.2",
     "antd": "^5.16.1",

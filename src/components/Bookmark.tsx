@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 
 const Bookmark = () => {
 
-  const { currColor } = useColor()
+  const { currColor, textColor } = useColor()
   // const [poetry, setPoetry] = useState({
   //   content: ["日出江花红胜火", "春来江水绿如蓝"],
   //   author: "白居易",
@@ -69,7 +69,7 @@ const Bookmark = () => {
 
   return (
     <div className="bookMark">
-      <div className="app">
+      <div className="app" style={{color: textColor}}>
 
 
         <div className="name" onClick={resetView}>

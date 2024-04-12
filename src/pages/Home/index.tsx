@@ -9,16 +9,15 @@ import ColorGroupSelect from "@/components/ColorGroupSelect";
 const Home = () => {
 
 
-  // console.log(currColor)
   const { currColor } = useColor()
 
   return (
-    <div className="home" style={{backgroundColor: currColor.hex}}>
-        <ColorSelect/>
-        <ColorSpace />
-        <Bookmark />
-        <ColorGroupSelect />
-        
+    <div className="home" style={{ backgroundColor: currColor.hex }}>
+      <ColorSelect />
+      <ColorSpace />
+      <Bookmark />
+      <ColorGroupSelect />
+
     </div>
   );
 };

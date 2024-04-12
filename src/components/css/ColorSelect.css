@@ -123,3 +123,7 @@
   /* animation-delay: 1s; */
 }
 
+.colorSelect .progressCircle {
+  padding-top: 0.7rem;
+}
+

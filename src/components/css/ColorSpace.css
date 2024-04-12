@@ -18,20 +18,32 @@
   /* height: 10rem; */
   border-top: 1px solid rgba(255, 255, 255, 0.6);
   cursor: default;
+  
   /* border-radius: 7px; */
   /* background-color: red; */
   /* background-color: rgba(0, 0, 0, 0.05); */
 }
 
+.cmyk .item{
+  margin-bottom: 0.7rem;
+  /* transition: fill 2.3s ease-in-out; */
+}
+
+.rgb .item{
+  margin-top: 0.2rem;
+}
+
 .colorSpace .app .shadow{
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.02);
+  margin-top: -1rem;
 }
 
 .item p{
-  color: white;
+  /* color: white; */
   font-size: 0.7rem;
   padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .rgb .item{
@@ -42,8 +54,8 @@
 .rgb .numerical{
   /* display: flex; */
   float: right;
-  padding: 1rem 0.25rem;
-  color: white;
+  padding: 0.5rem 0.25rem;
+  /* color: white; */
   font-size: 1.5rem;
 }
 
@@ -51,17 +63,12 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.colorSpace .rgb:hover {
-  opacity: 0.6;
-  /* background-color: rgba(0, 0, 0, 0.1); */
-}
-
 
 .colorSpace .hex {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid rgba(255, 255, 255, 0.6);
-  color: #e3f9fd;
+  /* color: #e3f9fd; */
   cursor: default;
   padding-top: 2rem;
   /* cursor: pointer; */
@@ -88,7 +95,9 @@
 .colorSpace .icp a {
   text-decoration: none;
   outline: none;
-  color: #e3f9fd;
+  /* color: #e3f9fd; */
   
 }
+
+
 

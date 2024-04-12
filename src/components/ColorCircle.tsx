@@ -1,47 +1,48 @@
 import React from "react";
+import { Progress } from 'antd';
+import { ConfigProvider } from 'antd';
+
+import { useColor } from '@/contexts/ColorContext';
 
 interface Props {
   color: string,
-  process: number,
-  space?:boolean,
-  width?:number,
-  r?:number
+  percent: number,
+  width: number,
+  strokeWidth: number,
+  space?: boolean,
+  bgc?: number[],
 }
 
-const ColorCircle: React.FC<Props> = ({ color, process, width=36, r=15, space=false }) => {
+const ColorCircle: React.FC<Props> = ({ color, percent, width, strokeWidth, space = false, bgc = [] }) => {
 
-  const radius = width / 2
-
-  const progress = process; // 进度为50%
-  const circumference = 2 * Math.PI * radius; // 圆的周长
-  const dashLength = (progress / 100) * circumference; // 实线的长度
-  const gapLength = circumference - dashLength; // 间隙的长度
-
+  const {textColor} = useColor()
 
   return (
-    <div className="peityContainer">
+    <>
+      {space ?
+        <ConfigProvider
+          theme={{
+            components: {
+              Progress: {
+                circleTextColor: bgc ? textColor : "white",
+                circleTextFontSize: "1.19rem",
+              },
+            },
+          }}
+        >
+          <Progress strokeWidth={strokeWidth} className="progressCircle" type="circle" percent={percent} format={(percent) => space ? percent : ''} strokeColor={color} success={{ strokeColor: "white", percent: 0 }} size={width} trailColor="#eee" />
 
-      <svg className="peity" height={width} width={width}>
-
-      {/* 在SVG中，cx和cy属性是用来定义圆心位置的。具体来说：
-      cx属性定义了圆心的水平位置，即圆心相对于SVG视口框左上角的水平偏移量。
-      cy属性定义了圆心的垂直位置，即圆心相对于SVG视口框左上角的垂直偏移量。 */}
-
-        <circle cx={radius} cy={radius} r={r} fill="none" stroke="#eee" strokeWidth="4"></circle>
-        <circle cx={radius} cy={radius} r={r} fill="none" stroke={color} strokeWidth="4" strokeDasharray={`${dashLength} ${gapLength}`} transform={`rotate(-90 ${radius} ${radius})`}></circle>
-
-        {space && (
-        // <text x={radius} y={radius} style={{ fill: color }} className="percentage">
-        <text x={radius} y={radius} className="percentage">
-            {process}
-        </text>
-        )}
-        
-      </svg>
-      {/* <p>12</p> */}
-    </div>
+        </ConfigProvider>
+        :
+        <Progress strokeWidth={strokeWidth} className="progressCircle" type="circle" percent={percent} format={(percent) => space ? percent : ''} strokeColor={color} success={{ strokeColor: "white", percent: 0 }} size={width} trailColor="#eee" />
+      }
+    </>
 
   );
 };
+
+
+
+
 
 export default ColorCircle;
