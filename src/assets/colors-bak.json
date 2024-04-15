@@ -8,10 +8,7 @@
         "hex": "#ffb3a7",
         "name": "粉红",
         "intro": "即浅红色。别称：妃色、杨妃色、湘妃色、妃红色",
-        "img": {
-          "path": "flower.moon.png?o=0.8",
-          "host": ""
-        }
+        "figure": "flower.moon.png?o=0.8"
       },
       {
         "id": "0-1",
@@ -36,10 +33,7 @@
         "hex": "#db5a6b",
         "name": "海棠红",
         "intro": "淡紫红色、较桃红色深一些，是非常妩媚娇艳的颜色。",
-        "img": {
-          "path": "girl.png?o=0.8",
-          "host": "https://i.postimg.cc/631zJJQQ/girl.png"
-        }
+        "figure": "girl.png?o=0.8"
       },
       {
         "id": "0-5",
@@ -47,12 +41,7 @@
         "name": "石榴红",
         "intro": "石榴花的颜色，高色度和纯度的红色。"
       },
-      {
-        "id": "0-6",
-        "hex": "#c93756",
-        "name": "樱桃色",
-        "intro": "鲜红色"
-      },
+      { "id": "0-6", "hex": "#c93756", "name": "樱桃色", "intro": "鲜红色" },
       {
         "id": "0-7",
         "hex": "#f05654",
@@ -64,27 +53,16 @@
         "hex": "#ff2121",
         "name": "大红",
         "intro": "正红色，三原色中的红，传统的中国红，又称绛色（RGB色中的R255系列明度）",
-        "img": {
-          "path": "long.png?width=20rem",
-          "host": "https://i.postimg.cc/tTPdf18B/long.png"
-        }
+        "figure": "long.png?width=20rem"
       },
       {
         "id": "0-9",
         "hex": "#8c4356",
         "name": "绛紫",
         "intro": "紫中略带红的颜色",
-        "img": {
-          "path": "fenyue.png",
-          "host": "https://i.postimg.cc/MZCNvVWp/fenyue.png"
-        }
+        "figure": "fenyue.png"
       },
-      {
-        "id": "0-10",
-        "hex": "#c83c23",
-        "name": "绯红",
-        "intro": "艳丽的深红"
-      },
+      { "id": "0-10", "hex": "#c83c23", "name": "绯红", "intro": "艳丽的深红" },
       {
         "id": "0-11",
         "hex": "#9d2933",
@@ -97,45 +75,17 @@
         "name": "朱红",
         "intro": "朱砂的颜色，比大红活泼，也称铅朱朱色丹色（在YM对等的情况下，适量减少红色的成分就是该色的色彩系列感觉）"
       },
-      {
-        "id": "0-13",
-        "hex": "#ff4e20",
-        "name": "丹",
-        "intro": "丹砂的鲜艳红色"
-      },
-      {
-        "id": "0-14",
-        "hex": "#f35336",
-        "name": "彤",
-        "intro": "赤色"
-      },
-      {
-        "id": "0-15",
-        "hex": "#cb3a56",
-        "name": "茜色",
-        "intro": "茜草染的色彩，呈深红色"
-      },
-      {
-        "id": "0-16",
-        "hex": "#ff2d51",
-        "name": "火红",
-        "intro": "火焰的红色，赤色"
-      },
-      {
-        "id": "0-17",
-        "hex": "#c91f37",
-        "name": "赫赤",
-        "intro": "深红，火红。泛指赤色、火红色。"
-      },
+      { "id": "0-13", "hex": "#ff4e20", "name": "丹", "intro": "丹砂的鲜艳红色" },
+      { "id": "0-14", "hex": "#f35336", "name": "彤", "intro": "赤色" },
+      { "id": "0-15", "hex": "#cb3a56", "name": "茜色", "intro": "茜草染的色彩，呈深红色" },
+      { "id": "0-16", "hex": "#ff2d51", "name": "火红", "intro": "火焰的红色，赤色" },
+      { "id": "0-17", "hex": "#c91f37", "name": "赫赤", "intro": "深红，火红。泛指赤色、火红色。" },
       {
         "id": "0-18",
         "hex": "#ef7a82",
         "name": "嫣红",
         "intro": "鲜艳的红色",
-        "img": {
-          "path": "jinyu.png?o=0.8",
-          "host": "https://i.postimg.cc/qqsLttLN/jinyu.png"
-        }
+        "figure": "jinyu.png?o=0.8"
       },
       {
         "id": "0-19",
@@ -143,46 +93,23 @@
         "name": "洋红",
         "intro": "色橘红（这个色彩方向不太对，通常洋红指的是倾向于M100系列的红色，应该削弱黄色成分。）"
       },
-      {
-        "id": "0-20",
-        "hex": "#ff3300",
-        "name": "炎",
-        "intro": "引申为红色"
-      },
-      {
-        "id": "0-21",
-        "hex": "#c3272b",
-        "name": "赤",
-        "intro": "本义火的颜色，即红色"
-      },
+      { "id": "0-20", "hex": "#ff3300", "name": "炎", "intro": "引申为红色" },
+      { "id": "0-21", "hex": "#c3272b", "name": "赤", "intro": "本义火的颜色，即红色" },
       {
         "id": "0-22",
         "hex": "#a98175",
         "name": "绾",
         "intro": "绛色；浅绛色",
-        "img": {
-          "path": "luohong.png?position=top",
-          "host": "https://i.postimg.cc/FHtWH4Vd/luohong.png"
-        }
+        "figure": "luohong.png?position=top"
       },
-      {
-        "id": "0-23",
-        "hex": "#c32136",
-        "name": "枣红",
-        "intro": "即深红（色相不变，是深浅变化）"
-      },
+      { "id": "0-23", "hex": "#c32136", "name": "枣红", "intro": "即深红（色相不变，是深浅变化）" },
       {
         "id": "0-24",
         "hex": "#b36d61",
         "name": "檀",
         "intro": "浅红色，浅绛色"
       },
-      {
-        "id": "0-25",
-        "hex": "#be002f",
-        "name": "殷红",
-        "intro": "发黑的红色。"
-      },
+      { "id": "0-25", "hex": "#be002f", "name": "殷红", "intro": "发黑的红色。" },
       {
         "id": "0-26",
         "hex": "#dc3023",
@@ -194,17 +121,10 @@
         "hex": "#f9906f",
         "name": "酡颜",
         "intro": "饮酒脸红的样子。亦泛指脸红色",
-        "img": {
-          "path": "meinv.png?o=0.9&width=18rem",
-          "host": ""
-        }
+        "figure": "meinv.png?o=0.9&width=18rem"
       }
     ],
-    "RGB": [
-      255,
-      179,
-      167
-    ],
+    "RGB": [255, 179, 167],
     "id": 0
   },
   {
@@ -216,52 +136,30 @@
         "hex": "#fff143",
         "name": "鹅黄",
         "intro": "淡黄色（鹅嘴的颜色，高明度微偏红黄色）",
-        "img": {
-          "path": "huofenghuang.png",
-          "host": "https://i.postimg.cc/Y2WyK01K/huofenghuang.png"
-        }
+        "figure": "huofenghuang.png"
       },
       {
         "id": "1-1",
         "hex": "#faff72",
         "name": "鸭黄",
         "intro": "小鸭毛的黄色",
-        "img": {
-          "path": "yellow.flower.png",
-          "host": "https://i.postimg.cc/qBNHtpyj/yellow.flower.png"
-        }
+        "figure": "yellow.flower.png"
       },
-      {
-        "id": "1-2",
-        "hex": "#eaff56",
-        "name": "樱草色",
-        "intro": "淡黄色"
-      },
+      { "id": "1-2", "hex": "#eaff56", "name": "樱草色", "intro": "淡黄色" },
       {
         "id": "1-3",
         "hex": "#ffa631",
         "name": "杏黄",
         "intro": "成熟杏子的黄色（Y100M20~30感觉的色彩，比较常用且有浓郁中国味道）",
-        "img": {
-          "path": "lianiao.png",
-          "host": "https://i.postimg.cc/7Y49FVH0/lianiao.png"
-        }
+        "figure": "lianiao.png"
       },
-      {
-        "id": "1-4",
-        "hex": "#ff8c31",
-        "name": "杏红",
-        "intro": "成熟杏子偏红色的一种颜色"
-      },
+      { "id": "1-4", "hex": "#ff8c31", "name": "杏红", "intro": "成熟杏子偏红色的一种颜色" },
       {
         "id": "1-5",
         "hex": "#ff8936",
         "name": "橘黄",
         "intro": "柑橘的黄色。",
-        "img": {
-          "path": "liahudie.png",
-          "host": "https://i.postimg.cc/XqL5S9Lk/liahudie.png"
-        }
+        "figure": "liahudie.png"
       },
       {
         "id": "1-6",
@@ -269,21 +167,13 @@
         "name": "橙黄",
         "intro": "同上。（Y100M50感觉的色彩，现代感比较强。广告上用得较多）"
       },
-      {
-        "id": "1-7",
-        "hex": "#ff7500",
-        "name": "橘红",
-        "intro": "柑橘皮所呈现的红色。"
-      },
+      { "id": "1-7", "hex": "#ff7500", "name": "橘红", "intro": "柑橘皮所呈现的红色。" },
       {
         "id": "1-8",
         "hex": "#ffc773",
         "name": "姜黄",
         "intro": "中药名。别名黄姜。为姜科植物姜黄的根茎。又指人脸色不正,呈黄白色",
-        "img": {
-          "path": "red.flower.png",
-          "host": "https://i.postimg.cc/c1bkPYKc/red.flower.png"
-        }
+        "figure": "red.flower.png"
       },
       {
         "id": "1-9",
@@ -297,30 +187,15 @@
         "name": "橙色",
         "intro": "界于红色和黄色之间的混合色"
       },
-      {
-        "id": "1-11",
-        "hex": "#b35c44",
-        "name": "茶色",
-        "intro": "一种比栗色稍红的棕橙色至浅棕色"
-      },
+      { "id": "1-11", "hex": "#b35c44", "name": "茶色", "intro": "一种比栗色稍红的棕橙色至浅棕色" },
       {
         "id": "1-12",
         "hex": "#a88462",
         "name": "驼色",
         "intro": "一种比咔叽色稍红而微淡、比肉桂色黄而稍淡和比核桃棕色黄而暗的浅黄棕色"
       },
-      {
-        "id": "1-13",
-        "hex": "#c89b40",
-        "name": "昏黄",
-        "intro": "形容天色、灯光等呈幽暗的黄色"
-      },
-      {
-        "id": "1-14",
-        "hex": "#60281e",
-        "name": "栗色",
-        "intro": "栗壳的颜色。即紫黑色"
-      },
+      { "id": "1-13", "hex": "#c89b40", "name": "昏黄", "intro": "形容天色、灯光等呈幽暗的黄色" },
+      { "id": "1-14", "hex": "#60281e", "name": "栗色", "intro": "栗壳的颜色。即紫黑色" },
       {
         "id": "1-15",
         "hex": "#b25d25",
@@ -332,53 +207,19 @@
         "hex": "#827100",
         "name": "棕绿",
         "intro": "绿中泛棕色的一种颜色",
+        "figure": "bottom.qunshan.png?width=100%",
         "img": {
           "path": "bottom.qunshan.png?width=100%",
-          "host": ""
+          "host": "https://s21.ax1x.com/2024/04/15/pFvyPpt.png"
         }
       },
-      {
-        "id": "1-17",
-        "hex": "#7c4b00",
-        "name": "棕黑",
-        "intro": "深棕色。"
-      },
-      {
-        "id": "1-18",
-        "hex": "#9b4400",
-        "name": "棕红",
-        "intro": "红褐色。"
-      },
-      {
-        "id": "1-19",
-        "hex": "#ae7000",
-        "name": "棕黄",
-        "intro": "浅褐色。"
-      },
-      {
-        "id": "1-20",
-        "hex": "#9c5333",
-        "name": "赭",
-        "intro": "赤红如赭土的颜料,古人用以饰面"
-      },
-      {
-        "id": "1-21",
-        "hex": "#955539",
-        "name": "赭色",
-        "intro": "红色、赤红色。"
-      },
-      {
-        "id": "1-22",
-        "hex": "#ca6924",
-        "name": "琥珀",
-        "intro": ""
-      },
-      {
-        "id": "1-23",
-        "hex": "#6e511e",
-        "name": "褐色",
-        "intro": "黄黑色"
-      },
+      { "id": "1-17", "hex": "#7c4b00", "name": "棕黑", "intro": "深棕色。" },
+      { "id": "1-18", "hex": "#9b4400", "name": "棕红", "intro": "红褐色。" },
+      { "id": "1-19", "hex": "#ae7000", "name": "棕黄", "intro": "浅褐色。" },
+      { "id": "1-20", "hex": "#9c5333", "name": "赭", "intro": "赤红如赭土的颜料,古人用以饰面" },
+      { "id": "1-21", "hex": "#955539", "name": "赭色", "intro": "红色、赤红色。" },
+      { "id": "1-22", "hex": "#ca6924", "name": "琥珀", "intro": "" },
+      { "id": "1-23", "hex": "#6e511e", "name": "褐色", "intro": "黄黑色" },
       {
         "id": "1-24",
         "hex": "#d3b17d",
@@ -390,9 +231,10 @@
         "hex": "#e29c45",
         "name": "黄栌",
         "intro": "一种落叶灌木，花黄绿色,叶子秋天变成红色。木材黄色可做染料。",
+        "figure": "heyue.png",
         "img": {
           "path": "heyue.png",
-          "host": "https://i.postimg.cc/Dfx308SW/heyue.png"
+          "host": "https://s21.ax1x.com/2024/04/15/pFvsxTH.png"
         }
       },
       {
@@ -400,9 +242,10 @@
         "hex": "#896c39",
         "name": "秋色",
         "intro": "1，中常橄榄棕色,它比一般橄榄棕色稍暗,且稍稍绿些。2，古以秋为金,其色白,故代指白色。",
+        "figure": "fenshu.png",
         "img": {
           "path": "fenshu.png",
-          "host": "https://i.postimg.cc/sD8FPq9s/fenshu.png"
+          "host": "https://s21.ax1x.com/2024/04/15/pFvyi1P.png"
         }
       },
       {
@@ -412,11 +255,7 @@
         "intro": "浅橄榄色浅黄绿色。（直接在Y中掺入k10~30可得到不同浓淡的该类色彩）"
       }
     ],
-    "RGB": [
-      255,
-      241,
-      67
-    ],
+    "RGB": [255, 241, 67],
     "id": 1
   },
   {
@@ -433,12 +272,7 @@
           "host": "https://i.postimg.cc/4drLHRRS/bottle-mei.png"
         }
       },
-      {
-        "id": "2-1",
-        "hex": "#c9dd22",
-        "name": "柳黄",
-        "intro": "像柳树芽那样的浅黄色"
-      },
+      { "id": "2-1", "hex": "#c9dd22", "name": "柳黄", "intro": "像柳树芽那样的浅黄色" },
       {
         "id": "2-2",
         "hex": "#afdd22",
@@ -450,35 +284,17 @@
         "hex": "#789262",
         "name": "竹青",
         "intro": "竹子的绿色",
-        "img": {
-          "path": "mozhu.png",
-          "host": "https://i.postimg.cc/KvLXNQ9T/mozhu.png"
-        }
+        "figure": "mozhu.png"
       },
-      {
-        "id": "2-4",
-        "hex": "#a3d900",
-        "name": "葱黄",
-        "intro": "黄绿色，嫩黄色"
-      },
+      { "id": "2-4", "hex": "#a3d900", "name": "葱黄", "intro": "黄绿色，嫩黄色" },
       {
         "id": "2-5",
         "hex": "#9ed900",
         "name": "葱绿",
         "intro": "1:浅绿又略显微黄的颜色 2:草木青翠的样子"
       },
-      {
-        "id": "2-6",
-        "hex": "#0eb83a",
-        "name": "葱青",
-        "intro": "淡淡的青绿色"
-      },
-      {
-        "id": "2-7",
-        "hex": "#0eb840",
-        "name": "葱倩",
-        "intro": "青绿色"
-      },
+      { "id": "2-6", "hex": "#0eb83a", "name": "葱青", "intro": "淡淡的青绿色" },
+      { "id": "2-7", "hex": "#0eb840", "name": "葱倩", "intro": "青绿色" },
       {
         "id": "2-8",
         "hex": "#0aa344",
@@ -491,37 +307,21 @@
         "name": "油绿",
         "intro": "光润而浓绿的颜色。以上几种绿色都是明亮可爱的色彩。"
       },
-      {
-        "id": "2-10",
-        "hex": "#0c8918",
-        "name": "绿沈",
-        "intro": "（沉）深绿"
-      },
+      { "id": "2-10", "hex": "#0c8918", "name": "绿沈", "intro": "（沉）深绿" },
       {
         "id": "2-11",
         "hex": "#1bd1a5",
         "name": "碧色",
         "intro": "1，青绿色。2，青白色,浅蓝色。",
-        "img": {
-          "path": "hehua3.png",
-          "host": "https://i.postimg.cc/43sWpQMX/hehua3.png"
-        }
+        "figure": "hehua3.png"
       },
-      {
-        "id": "2-12",
-        "hex": "#2add9c",
-        "name": "碧绿",
-        "intro": "鲜艳的青绿色"
-      },
+      { "id": "2-12", "hex": "#2add9c", "name": "碧绿", "intro": "鲜艳的青绿色" },
       {
         "id": "2-13",
         "hex": "#48c0a3",
         "name": "青碧",
         "intro": "鲜艳的青蓝色",
-        "img": {
-          "path": "guohua.hua.png",
-          "host": "https://i.postimg.cc/qRtD7MSK/guohua-hua.png"
-        }
+        "figure": "guohua.hua.png"
       },
       {
         "id": "2-14",
@@ -529,50 +329,35 @@
         "name": "翡翠色",
         "intro": "1，翡翠鸟羽毛的青绿色。2，翡翠宝石的颜色。（C-Y≥30的系列色彩，多与白色配合以体现清新明丽感觉，与黑色配合效果不好该色个性柔弱，会被黑色牵制）"
       },
-      {
-        "id": "2-15",
-        "hex": "#40de5a",
-        "name": "草绿",
-        "intro": "绿而略黄的颜色。"
-      },
+      { "id": "2-15", "hex": "#40de5a", "name": "草绿", "intro": "绿而略黄的颜色。" },
       {
         "id": "2-16",
         "hex": "#00e09e",
         "name": "青色",
         "intro": "1，一类带绿的蓝色,中等深浅,高度饱和。3，本义是蓝色。4，一般指深绿色。5，也指黑色。6，四色印刷中的一色。2，特指三补色中的一色。",
+        "figure": "hehuaqingting.png",
         "img": {
           "path": "hehuaqingting.png",
-          "host": "https://i.postimg.cc/vmrpsBRZ/hehuaqingting.png"
+          "host": "https://s21.ax1x.com/2024/04/15/pFvy9fI.png"
         }
       },
-      {
-        "id": "2-17",
-        "hex": "#00e079",
-        "name": "青翠",
-        "intro": "鲜绿",
-        "img": {
-          "path": "song.png",
-          "host": "https://i.postimg.cc/pdJ1S689/song.png"
-        }
-      },
+      { "id": "2-17", "hex": "#00e079", "name": "青翠", "intro": "鲜绿", "figure": "song.png" },
       {
         "id": "2-18",
         "hex": "#c0ebd7",
         "name": "青白",
         "intro": "白而发青,尤指脸没有血色",
-        "img": {
-          "path": "xia.png",
-          "host": "https://i.postimg.cc/VvVhR0tD/xia.png"
-        }
+        "figure": "xia.png"
       },
       {
         "id": "2-19",
         "hex": "#e0eee8",
         "name": "鸭卵青",
         "intro": "淡青灰色，极淡的青绿色",
+        "figure": "shuanghe2.png",
         "img": {
           "path": "shuanghe2.png",
-          "host": "https://i.postimg.cc/C1JXRQxy/shuanghe2.png"
+          "host": "https://s21.ax1x.com/2024/04/15/pFvsv0e.png"
         }
       },
       {
@@ -580,10 +365,7 @@
         "hex": "#bbcdc5",
         "name": "蟹壳青",
         "intro": "深灰绿色",
-        "img": {
-          "path": "guohua.hehua2.png",
-          "host": "https://i.postimg.cc/TYvNRx9y/guohua-hehua2.png"
-        }
+        "figure": "guohua.hehua2.png"
       },
       {
         "id": "2-21",
@@ -597,60 +379,44 @@
         "name": "绿色",
         "intro": "1，在光谱中介于蓝与黄之间的那种颜色。2，本义青中带黄的颜色。3，引申为黑色，如绿鬓乌黑而光亮的鬓发。代指为青春年少的容颜。（现代色彩研究中，把绿色提高到了一个重要的位置，和其它红黄兰三原色并列研究，称做\"心理原色\"之一）"
       },
-      {
-        "id": "2-23",
-        "hex": "#9ed048",
-        "name": "豆绿",
-        "intro": "浅黄绿色"
-      },
+      { "id": "2-23", "hex": "#9ed048", "name": "豆绿", "intro": "浅黄绿色" },
       {
         "id": "2-24",
         "hex": "#96ce54",
         "name": "豆青",
         "intro": "浅青绿色",
-        "img": {
-          "path": "right.bottom.huaping.png?width=8rem&o=0.8",
-          "host": "https://i.postimg.cc/t4Mh4tjr/right.bottom.huaping.png"
-        }
+        "figure": "right.bottom.huaping.png?width=8rem&o=0.8"
       },
       {
         "id": "2-25",
         "hex": "#7bcfa6",
         "name": "石青",
         "intro": "淡灰绿色",
-        "img": {
-          "path": "right.bottom.honghehua.png",
-          "host": "https://i.postimg.cc/MHQL9KYw/right.bottom.honghehua.png"
-        }
+        "figure": "right.bottom.honghehua.png"
       },
       {
         "id": "2-26",
         "hex": "#2edfa3",
         "name": "玉色",
         "intro": "玉的颜色，高雅的淡绿、淡青色",
-        "img": {
-          "path": "jinyu.png",
-          "host": ""
-        }
+        "figure": "jinyu.png"
       },
       {
         "id": "2-27",
         "hex": "#7fecad",
         "name": "缥",
         "intro": "绿色而微白",
-        "img": {
-          "path": "right.bottom.hongmujin.png",
-          "host": "https://i.postimg.cc/7L9m9T80/right.bottom.hongmujin.png"
-        }
+        "figure": "right.bottom.hongmujin.png"
       },
       {
         "id": "2-28",
         "hex": "#a4e2c6",
         "name": "艾绿",
         "intro": "艾草的颜色。偏苍白的绿色",
+        "figure": "yunshan.png",
         "img": {
           "path": "yunshan.png",
-          "host": "https://i.postimg.cc/X7XSC45s/yunshan.png"
+          "host": "https://s21.ax1x.com/2024/04/15/pFvyptA.png"
         }
       },
       {
@@ -658,20 +424,14 @@
         "hex": "#21a675",
         "name": "松柏绿",
         "intro": "经冬松柏叶的深绿",
-        "img": {
-          "path": "guohua.hehua.png",
-          "host": "https://i.postimg.cc/JnTYrHpM/guohua-hehua.png"
-        }
+        "figure": "guohua.hehua.png"
       },
       {
         "id": "2-30",
         "hex": "#057748",
         "name": "松花绿",
         "intro": "亦作\"松花\"、\"松绿\"。偏黑的深绿色,墨绿。",
-        "img": {
-          "path": "hudie.png?width=10rem",
-          "host": ""
-        }
+        "figure": "hudie.png?width=10rem"
       },
       {
         "id": "2-31",
@@ -680,11 +440,7 @@
         "intro": "浅黄绿色。（松树花粉的颜色）《红楼梦》中提及松花配桃红为娇艳"
       }
     ],
-    "RGB": [
-      10,
-      163,
-      68
-    ],
+    "RGB": [10, 163, 68],
     "id": 2
   },
   {
@@ -702,40 +458,28 @@
         "hex": "#177cb0",
         "name": "靛青",
         "intro": "也叫\"蓝靛\"。用蓼蓝叶泡水调和与石灰沉淀所得的蓝色染料。呈深蓝绿色（靛，发音dian四声，有些地方将蓝墨水称为\"靛水\"或者\"兰靛水\"）",
-        "img": {
-          "path": "hehua.caise.png?width=17rem&o=0.7",
-          "host": ""
-        }
+        "figure": "hehua.caise.png?width=17rem&o=0.7"
       },
       {
         "id": "3-2",
         "hex": "#065279",
         "name": "靛蓝",
         "intro": "由植物(例如靛蓝或菘蓝属植物)得到的蓝色染料",
-        "img": {
-          "path": "moon.png",
-          "host": ""
-        }
+        "figure": "moon.png"
       },
       {
         "id": "3-3",
         "hex": "#3eede7",
         "name": "碧蓝",
         "intro": "青蓝色",
-        "img": {
-          "path": "wave.png?width=100%",
-          "host": "https://i.postimg.cc/KjB9npZv/wave.png"
-        }
+        "figure": "wave.png?width=100%"
       },
       {
         "id": "3-4",
         "hex": "#70f3ff",
         "name": "蔚蓝",
         "intro": "类似晴朗天空的颜色的一种蓝色",
-        "img": {
-          "path": "he.png",
-          "host": "https://i.postimg.cc/XYQscC0F/he.png"
-        }
+        "figure": "he.png"
       },
       {
         "id": "3-5",
@@ -748,55 +492,25 @@
         "hex": "#a1afc9",
         "name": "蓝灰色",
         "intro": "一种近于灰略带蓝的深灰色",
-        "img": {
-          "path": "left.bottom.mutong.png",
-          "host": "https://i.postimg.cc/HLvPH7ZH/left-bottom-mutong.png"
-        }
+        "figure": "left.bottom.mutong.png"
       },
-      {
-        "id": "3-7",
-        "hex": "#2e4e7e",
-        "name": "藏青",
-        "intro": "蓝而近黑"
-      },
-      {
-        "id": "3-8",
-        "hex": "#3b2e7e",
-        "name": "藏蓝",
-        "intro": "蓝里略透红色"
-      },
+      { "id": "3-7", "hex": "#2e4e7e", "name": "藏青", "intro": "蓝而近黑" },
+      { "id": "3-8", "hex": "#3b2e7e", "name": "藏蓝", "intro": "蓝里略透红色" },
       {
         "id": "3-9",
         "hex": "#4a4266",
         "name": "黛",
         "intro": "别名：黛色，黛螺。青黑色的颜料。古代女子用以画眉。绘画或画眉所使用的青黑色颜料，代指女子眉妩。"
       },
-      {
-        "id": "3-10",
-        "hex": "#426666",
-        "name": "黛绿",
-        "intro": "墨绿",
-        "img": {
-          "path": "honghua.png",
-          "host": "https://i.postimg.cc/59LpKGVf/honghua.png"
-        }
-      },
+      { "id": "3-10", "hex": "#426666", "name": "黛绿", "intro": "墨绿", "figure": "honghua.png" },
       {
         "id": "3-11",
         "hex": "#425066",
         "name": "黛蓝",
         "intro": "深蓝色",
-        "img": {
-          "path": "left.mei.png?position=left",
-          "host": "https://i.postimg.cc/V65pbFrd/left-mei.png"
-        }
+        "figure": "left.mei.png?position=left"
       },
-      {
-        "id": "3-12",
-        "hex": "#574266",
-        "name": "黛紫",
-        "intro": "深紫色"
-      },
+      { "id": "3-12", "hex": "#574266", "name": "黛紫", "intro": "深紫色" },
       {
         "id": "3-13",
         "hex": "#8d4bbb",
@@ -804,101 +518,46 @@
         "intro": "蓝和红组成的颜色。古人以紫为祥瑞的颜色。代指与帝王、皇宫有关的事物",
         "img": {
           "path": "right.bottom.qunshan.png",
-          "host": "https://i.postimg.cc/cCBRxpxY/right.bottom.qunshan.png"
+          "host": "https://i.postimg.cc/bJq4Nh8H/bottom-qunshan.png"
         }
       },
-      {
-        "id": "3-14",
-        "hex": "#815463",
-        "name": "紫酱",
-        "intro": "浑浊的紫色"
-      },
-      {
-        "id": "3-15",
-        "hex": "#815476",
-        "name": "酱紫",
-        "intro": "紫中略带红的颜色"
-      },
-      {
-        "id": "3-16",
-        "hex": "#4c221b",
-        "name": "紫檀",
-        "intro": "檀木的颜色，也称乌檀色乌木色"
-      },
-      {
-        "id": "3-17",
-        "hex": "#003371",
-        "name": "绀青绀紫",
-        "intro": "纯度较低的深紫色"
-      },
-      {
-        "id": "3-18",
-        "hex": "#56004f",
-        "name": "紫棠",
-        "intro": "黑红色"
-      },
-      {
-        "id": "3-19",
-        "hex": "#801dae",
-        "name": "青莲",
-        "intro": "偏蓝的紫色"
-      },
-      {
-        "id": "3-20",
-        "hex": "#4c8dae",
-        "name": "群青",
-        "intro": "深蓝色",
-        "img": {
-          "path": "meihua.png",
-          "host": ""
-        }
-      },
+      { "id": "3-14", "hex": "#815463", "name": "紫酱", "intro": "浑浊的紫色" },
+      { "id": "3-15", "hex": "#815476", "name": "酱紫", "intro": "紫中略带红的颜色" },
+      { "id": "3-16", "hex": "#4c221b", "name": "紫檀", "intro": "檀木的颜色，也称乌檀色乌木色" },
+      { "id": "3-17", "hex": "#003371", "name": "绀青绀紫", "intro": "纯度较低的深紫色" },
+      { "id": "3-18", "hex": "#56004f", "name": "紫棠", "intro": "黑红色" },
+      { "id": "3-19", "hex": "#801dae", "name": "青莲", "intro": "偏蓝的紫色" },
+      { "id": "3-20", "hex": "#4c8dae", "name": "群青", "intro": "深蓝色", "figure": "meihua.png" },
       {
         "id": "3-21",
         "hex": "#b0a4e3",
         "name": "雪青",
         "intro": "浅蓝紫色",
-        "img": {
-          "path": "mujin.png",
-          "host": "https://i.postimg.cc/vm0CBKmJ/mujin.png"
-        }
+        "figure": "mujin.png"
       },
       {
         "id": "3-22",
         "hex": "#cca4e3",
         "name": "丁香色",
         "intro": "紫丁香的颜色，浅浅的紫色，很娇柔淡雅的色彩",
-        "img": {
-          "path": "huaniao.png",
-          "host": "https://i.postimg.cc/5tXSBKgd/huaniao.png"
-        }
+        "figure": "huaniao.png"
       },
       {
         "id": "3-23",
         "hex": "#edd1d8",
         "name": "藕色",
         "intro": "浅灰而略带红的颜色",
-        "img": {
-          "path": "jianzhi.png?width=20rem&opacity=0.6",
-          "host": "https://i.postimg.cc/Y0hnh2Pg/jianzhi.png"
-        }
+        "figure": "jianzhi.png?width=20rem&opacity=0.6"
       },
       {
         "id": "3-24",
         "hex": "#e4c6d0",
         "name": "藕荷色",
         "intro": "浅紫而略带红的颜色",
-        "img": {
-          "path": "meinv2.png",
-          "host": "https://i.postimg.cc/YC1X4sdX/meinv2.png"
-        }
+        "figure": "meinv2.png"
       }
     ],
-    "RGB": [
-      68,
-      206,
-      246
-    ],
+    "RGB": [68, 206, 246],
     "id": 3
   },
   {
@@ -910,51 +569,30 @@
         "hex": "#75878a",
         "name": "苍色",
         "intro": "即各种颜色掺入黑色后的颜色",
-        "img": {
-          "path": "qunshan.png?width=100%",
-          "host": "https://i.postimg.cc/bN1MbrJH/qunshan.png"
-        }
+        "figure": "qunshan.png?width=100%"
       },
       {
         "id": "4-1",
         "hex": "#519a73",
         "name": "苍翠",
         "intro": "",
-        "img": {
-          "path": "lvzhu.png?width=18rem",
-          "host": "https://i.postimg.cc/26JJdBhT/lvzhu.png"
-        }
+        "figure": "lvzhu.png?width=18rem"
       },
       {
         "id": "4-2",
         "hex": "#a29b7c",
         "name": "苍黄",
         "intro": "",
-        "img": {
-          "path": "guilinshanshui.png",
-          "host": "https://i.postimg.cc/0jRn2Gpg/guilinshanshui.png"
-        }
+        "figure": "guilinshanshui.png"
       },
       {
         "id": "4-3",
         "hex": "#7397ab",
         "name": "苍青",
         "intro": "",
-        "img": {
-          "path": "liangduohua.png?width=12rem",
-          "host": "https://i.postimg.cc/qq4K51s7/liangduohua.png"
-        }
+        "figure": "liangduohua.png?width=12rem"
       },
-      {
-        "id": "4-4",
-        "hex": "#395260",
-        "name": "苍黑",
-        "intro": "",
-        "img": {
-          "path": "sundown.png",
-          "host": "https://i.postimg.cc/T3msVw3J/sundown.png"
-        }
-      },
+      { "id": "4-4", "hex": "#395260", "name": "苍黑", "intro": "", "figure": "sundown.png" },
       {
         "id": "4-5",
         "hex": "#d1d9e0",
@@ -966,11 +604,7 @@
         }
       }
     ],
-    "RGB": [
-      117,
-      135,
-      138
-    ],
+    "RGB": [117, 135, 138],
     "id": 4
   },
   {
@@ -982,9 +616,10 @@
         "hex": "#88ada6",
         "name": "水色",
         "intro": "",
+        "figure": "hehuayu.png?width=16rem",
         "img": {
           "path": "hehuayu.png?width=16rem",
-          "host": "https://i.postimg.cc/rpXv34PH/hehuayu.png"
+          "host": "https://s21.ax1x.com/2024/04/15/pFvyF6f.png"
         }
       },
       {
@@ -992,67 +627,39 @@
         "hex": "#f3d3e7",
         "name": "水红",
         "intro": "",
-        "img": {
-          "path": "hehua2.png?width=18rem",
-          "host": "https://i.postimg.cc/TwWQ6N5q/hehua2.png"
-        }
+        "figure": "hehua2.png?width=18rem"
       },
       {
         "id": "5-2",
         "hex": "#d4f2e7",
         "name": "水绿",
         "intro": "",
-        "img": {
-          "path": "yu.png?width=17rem",
-          "host": "https://i.postimg.cc/C1ykjhdk/yu.png"
-        }
+        "figure": "yu.png?width=17rem"
       },
       {
         "id": "5-3",
         "hex": "#d2f0f4",
         "name": "水蓝",
         "intro": "",
-        "img": {
-          "path": "moon.png?width=18rem",
-          "host": "https://i.postimg.cc/Twrm0zWS/moon.png"
-        }
+        "figure": "moon.png?width=18rem"
       },
       {
         "id": "5-4",
         "hex": "#d3e0f3",
         "name": "淡青",
         "intro": "",
-        "img": {
-          "path": "huaping.png?width=18rem",
-          "host": "https://i.postimg.cc/BnQg6n1v/huaping.png"
-        }
+        "figure": "huaping.png?width=18rem"
       },
-      {
-        "id": "5-5",
-        "hex": "#30dff3",
-        "name": "湖蓝",
-        "intro": "",
-        "img": {
-          "path": "shuanghe.png",
-          "host": "https://i.postimg.cc/NfZV2TB0/shuanghe.png"
-        }
-      },
+      { "id": "5-5", "hex": "#30dff3", "name": "湖蓝", "intro": "", "figure": "shuanghe.png" },
       {
         "id": "5-6",
         "hex": "#25f8cb",
         "name": "湖绿",
         "intro": "皆是浅色。深色淡色，颜色深的或浅的，不再一一列出。",
-        "img": {
-          "path": "hehua.caise.png",
-          "host": "https://i.postimg.cc/Vk1hFw0y/hehua-caise.png"
-        }
+        "figure": "hehua.caise.png"
       }
     ],
-    "RGB": [
-      210,
-      240,
-      244
-    ],
+    "RGB": [210, 240, 244],
     "id": 5
   },
   {
@@ -1064,60 +671,30 @@
         "hex": "#ffffff",
         "name": "精白",
         "intro": "纯白，洁白，净白，粉白。",
-        "img": {
-          "path": "meihua.shuimo.png",
-          "host": "https://i.postimg.cc/J0vTJVwF/meihua.shuimo.png"
-        }
+        "figure": "meihua.shuimo.png"
       },
-      {
-        "id": "6-1",
-        "hex": "#fffbf0",
-        "name": "象牙白",
-        "intro": "乳白色",
-        "img": {
-          "path": "pomo.png",
-          "host": "https://i.postimg.cc/Gpfz6ntm/pomo.png"
-        }
-      },
+      { "id": "6-1", "hex": "#fffbf0", "name": "象牙白", "intro": "乳白色", "figure": "pomo.png" },
       {
         "id": "6-2",
         "hex": "#f2fdff",
         "name": "雪白",
         "intro": "如雪般洁白",
-        "img": {
-          "path": "meihua.pink.png",
-          "host": "https://i.postimg.cc/25y2HSzt/meihua.pink.png"
-        }
+        "figure": "meihua.pink.png"
       },
       {
         "id": "6-3",
         "hex": "#d6ecf0",
         "name": "月白",
         "intro": "淡蓝色",
-        "img": {
-          "path": "fenhua.png",
-          "host": "https://i.postimg.cc/Nf8JFnJd/fenhua.png"
-        }
+        "figure": "fenhua.png"
       },
-      {
-        "id": "6-4",
-        "hex": "#f2ecde",
-        "name": "缟",
-        "intro": "白色",
-        "img": {
-          "path": "meihua.pink.png",
-          "host": ""
-        }
-      },
+      { "id": "6-4", "hex": "#f2ecde", "name": "缟", "intro": "白色", "figure": "meihua.pink.png" },
       {
         "id": "6-5",
         "hex": "#e0f0e9",
         "name": "素",
         "intro": "白色，无色",
-        "img": {
-          "path": "qunshan.png?width=100%",
-          "host": ""
-        }
+        "figure": "qunshan.png?width=100%"
       },
       {
         "id": "6-6",
@@ -1154,40 +731,28 @@
         "hex": "#fcefe8",
         "name": "鱼肚白",
         "intro": "似鱼腹部的颜色，多指黎明时东方的天色颜色（M5Y5）",
-        "img": {
-          "path": "zuibaxian.png?width=100%",
-          "host": "https://i.postimg.cc/PJxcYQCC/zuibaxian.png"
-        }
+        "figure": "zuibaxian.png?width=100%"
       },
       {
         "id": "6-10",
         "hex": "#e3f9fd",
         "name": "莹白",
         "intro": "晶莹洁白",
-        "img": {
-          "path": "meinv.png?width=18rem",
-          "host": "https://i.postimg.cc/RVWy0Gr8/meinv.png"
-        }
+        "figure": "meinv.png?width=18rem"
       },
       {
         "id": "6-11",
         "hex": "#808080",
         "name": "灰色",
         "intro": "黑色和白色混和成的一种颜色",
-        "img": {
-          "path": "mutong.png",
-          "host": "https://i.postimg.cc/tTgDMCpf/mutong.png"
-        }
+        "figure": "mutong.png"
       },
       {
         "id": "6-12",
         "hex": "#eedeb0",
         "name": "牙色",
         "intro": "与象牙相似的淡黄色（暖白）",
-        "img": {
-          "path": "zhuzi.png?width=14rem",
-          "host": "https://i.postimg.cc/rwLBYWbP/zhuzi.png"
-        }
+        "figure": "zhuzi.png?width=14rem"
       },
       {
         "id": "6-13",
@@ -1200,11 +765,7 @@
         }
       }
     ],
-    "RGB": [
-      240,
-      240,
-      244
-    ],
+    "RGB": [240, 240, 244],
     "id": 6
   },
   {
@@ -1217,12 +778,7 @@
         "name": "玄色",
         "intro": "赤黑色，黑中带红的颜色，又泛指黑色"
       },
-      {
-        "id": "7-1",
-        "hex": "#3d3b4f",
-        "name": "玄青",
-        "intro": "深黑色"
-      },
+      { "id": "7-1", "hex": "#3d3b4f", "name": "玄青", "intro": "深黑色" },
       {
         "id": "7-2",
         "hex": "#725e82",
@@ -1234,39 +790,32 @@
         "hex": "#392f41",
         "name": "乌黑",
         "intro": "深黑；漆黑",
-        "img": {
-          "path": "moon.png",
-          "host": ""
-        }
+        "figure": "moon.png"
       },
       {
         "id": "7-4",
         "hex": "#161823",
         "name": "漆黑",
         "intro": "非常黑的",
-        "img": {
-          "path": "flower.moon.png?o=0.6",
-          "host": "https://i.postimg.cc/SNY14sCb/flower-moon.png"
-        }
+        "figure": "flower.moon.png?o=0.6"
       },
       {
         "id": "7-5",
         "hex": "#50616d",
         "name": "墨色",
         "intro": "即黑色",
-        "img": {
-          "path": "huashan.png?width=18rem",
-          "host": "https://i.postimg.cc/6q2cBj7f/huashan.png"
-        }
+        "figure": "huashan.png?width=18rem"
       },
+
       {
         "id": "7-6",
         "hex": "#758a99",
         "name": "墨灰",
         "intro": "即黑灰",
+        "figure": "huizhuzi.png?position=left",
         "img": {
           "path": "huizhuzi.png?position=left",
-          "host": "https://i.postimg.cc/y6Q2BtGc/huizhuzi.png"
+          "host": "https://i.postimg.cc/Pqn1ytJN/huizhuzi.png"
         }
       },
       {
@@ -1274,17 +823,9 @@
         "hex": "#000000",
         "name": "黑色",
         "intro": "亮度最低的非彩色的或消色差的物体的颜色；最暗的灰色；与白色截然不同的消色差的颜色；被认为特别属于那些既不能反射、又不能透过能使人感觉到的微小入射光的物体,任何亮度很低的物体颜色。",
-        "img": {
-          "path": "moon.png",
-          "host": ""
-        }
+        "figure": "moon.png"
       },
-      {
-        "id": "7-8",
-        "hex": "#493131",
-        "name": "缁色",
-        "intro": "帛黑色"
-      },
+      { "id": "7-8", "hex": "#493131", "name": "缁色", "intro": "帛黑色" },
       {
         "id": "7-9",
         "hex": "#312520",
@@ -1338,11 +879,7 @@
         }
       }
     ],
-    "RGB": [
-      0,
-      0,
-      0
-    ],
+    "RGB": [0, 0, 0],
     "id": 7
   },
   {
@@ -1366,43 +903,25 @@
         "hex": "#e9e7ef",
         "name": "银白",
         "intro": "带银光的白色",
-        "img": {
-          "path": "qiangyan.png",
-          "host": "https://i.postimg.cc/GhbP7mKj/qiangyan.png"
-        }
+        "figure": "qiangyan.png"
       },
       {
         "id": "8-3",
         "hex": "#bacac6",
         "name": "老银",
         "intro": "金属氧化后的色彩",
-        "img": {
-          "path": "right.bottom.yesun.png",
-          "host": "https://i.postimg.cc/DfJRvB3N/right.bottom.yesun.png"
-        }
+        "figure": "right.bottom.yesun.png"
       },
-      {
-        "id": "8-4",
-        "hex": "#a78e44",
-        "name": "乌金",
-        "intro": ""
-      },
+      { "id": "8-4", "hex": "#a78e44", "name": "乌金", "intro": "" },
       {
         "id": "8-5",
         "hex": "#549688",
         "name": "铜绿",
         "intro": "",
-        "img": {
-          "path": "right.bottom.hehua.png",
-          "host": "https://i.postimg.cc/nLJP0Jsb/right.bottom.hehua.png"
-        }
+        "figure": "right.bottom.hehua.png"
       }
     ],
-    "RGB": [
-      234,
-      205,
-      118
-    ],
+    "RGB": [234, 205, 118],
     "id": 8
   }
 ]

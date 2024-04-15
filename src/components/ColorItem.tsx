@@ -61,7 +61,14 @@ const ColorItem: React.FC<Props> = ({ color }) => {
 
         <div className="desc" style={{ color: getContrastTextColor(color.RGB) }}>{color.name}</div>
 
-        {color.figure && <img className="figure" src={`/figure/${color.figure}`} alt="figure" />}
+        {
+
+        color.img && 
+        color.img?.host ? <img className="figure" src={color.img.host} /> : 
+        color.img?.path && <img className="figure" src={`/figure/${color.img.path}`} />
+        // color.figure && <img className="figure" src={`/figure/${color.figure}`} alt="figure" />
+        
+        }
 
       </div>
     </div>

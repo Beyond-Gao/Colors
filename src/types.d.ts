@@ -28,6 +28,12 @@ type ColorType = {
   intro: string,
   name: string,
   pinyin: string,
+  img?: ImgType,
+}
+
+type ImgType = {
+  path: string,
+  host: string,
 }
 
 export {ColorType, ColorGroupType};
