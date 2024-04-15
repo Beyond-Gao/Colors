@@ -1,19 +1,15 @@
-import scrollIntoView from 'scroll-into-view-if-needed';
 import { load } from 'jinrishici';
-
-import { useColor } from "@/contexts/ColorContext";
 
 import './css/Bookmark.css'
 import { useEffect, useState } from 'react';
+import { useColor } from "@/contexts/ColorContext";
+import scrollIntoView from 'scroll-into-view-if-needed';
+
 
 const Bookmark = () => {
 
   const { currColor, textColor } = useColor()
-  // const [poetry, setPoetry] = useState({
-  //   content: ["日出江花红胜火", "春来江水绿如蓝"],
-  //   author: "白居易",
-  //   title: "忆江南",
-  // });
+
   const [poetry, setPoetry] = useState({
     content: ["", ""],
     author: "",

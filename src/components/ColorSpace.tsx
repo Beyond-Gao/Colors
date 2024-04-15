@@ -1,16 +1,18 @@
-import { Tooltip } from 'antd';
+import { ConfigProvider, Tooltip } from 'antd';
+import { useSize } from 'ahooks';
 import { useSpring, animated } from '@react-spring/web'
 
 import './css/ColorSpace.css'
-import { useMemo } from "react";
+import { useMemo, useRef } from "react";
 import ICP from "@/components/ICP";
 import ColorCircle from "./ColorCircle";
 import { copyx } from '@/hooks/useColors'
-import useScreenWidth from '@/hooks/useScreen'
 import { useColor } from "@/contexts/ColorContext";
 
 const ColorSpace = () => {
 
+  const shadowRef = useRef(null);
+  const shadowSize = useSize(shadowRef);
   const { currColor, textColor } = useColor()
 
   const { r } = useSpring({
@@ -37,34 +39,48 @@ const ColorSpace = () => {
     hex: currColor.hex,
   }), [currColor]);
 
-  const { spaceWidth } = useScreenWidth()
+  const circleSize = useMemo(() => {
+    return shadowSize ? shadowSize!.width : 20
+  }, [shadowSize])
 
   return (
     <div className="colorSpace">
 
       <div className="app">
 
+        <div className="shadow" ref={shadowRef}>
 
-        <div className="shadow">
           <div className="cmyk" style={{ color: textColor }}>
+            <ConfigProvider
+              theme={{
+                components: {
+                  Progress: {
+                    circleTextColor: textColor,
+                    circleTextFontSize: "1.19rem",
+                  },
+                },
+              }}
+            >
+              {/* <div className="item"> */}
+              <div className="item">
+                <p>C</p>
+                <ColorCircle color='#0d5661' width={circleSize} strokeWidth={6} percent={currColor.CMYK[0]} space={true} />
+              </div>
+              <div className="item">
+                <p>M</p>
+                <ColorCircle color='#cb1b45' width={circleSize} strokeWidth={6} percent={currColor.CMYK[1]} space={true} />
+              </div>
+              <div className="item">
+                <p>Y</p>
+                <ColorCircle color='#ffc408' width={circleSize} strokeWidth={6} percent={currColor.CMYK[2]} space={true} />
+              </div>
+              <div className="item">
+                <p>K</p>
+                <ColorCircle color='#1c1c1c' width={circleSize} strokeWidth={6} percent={currColor.CMYK[3]} space={true} />
+              </div>
 
-            {/* <div className="item"> */}
-            <div className="item">
-              <p>C</p>
-              <ColorCircle color='#0d5661' bgc={currColor.RGB} width={spaceWidth} strokeWidth={6} percent={currColor.CMYK[0]} space={true} />
-            </div>
-            <div className="item">
-              <p>M</p>
-              <ColorCircle color='#cb1b45' bgc={currColor.RGB} width={spaceWidth} strokeWidth={6} percent={currColor.CMYK[1]} space={true} />
-            </div>
-            <div className="item">
-              <p>Y</p>
-              <ColorCircle color='#ffc408' bgc={currColor.RGB} width={spaceWidth} strokeWidth={6} percent={currColor.CMYK[2]} space={true} />
-            </div>
-            <div className="item">
-              <p>K</p>
-              <ColorCircle color='#1c1c1c' bgc={currColor.RGB} width={spaceWidth} strokeWidth={6} percent={currColor.CMYK[3]} space={true} />
-            </div>
+            </ConfigProvider>
+
 
           </div>
 

@@ -25,6 +25,7 @@ const Home = () => {
   return (
     <div className="home">
       {/* <div className="loading" ref={loading}><Spin /></div> */}
+
       <div className="loading" ref={loading}>
         <Loading />
       </div>

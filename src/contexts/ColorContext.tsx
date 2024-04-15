@@ -4,6 +4,8 @@ import { getContrastTextColor } from '@/hooks/useColors'
 
 import { Colors } from '@/hooks/useColors'
 import { ColorType, ColorGroupType } from '@/types'
+import backgroundImage from '@/assets/img/bg.texture.png';
+import topImage from '@/assets/img/bg.top.png';
 
 
 interface ColorProviderProps {
@@ -25,9 +27,9 @@ const initialValue = {
     currColor: Colors[7].colors[0],
     textColor: "white"
 }
-// document.body.style.backgroundColor = initialValue.currColor.hex;
 document.body.style.transition = 'background-color 1.77s ease-in';
-document.body.style.backgroundImage = 'url("../../assets/img/bg.texture.png"), url("../../assets/img/bg.top.png")';
+// document.body.style.backgroundImage = 'url("../../assets/img/bg.texture.png"), url("../../assets/img/bg.top.png")';
+document.body.style.backgroundImage = `url(${backgroundImage}), url(${topImage})`;
 document.body.style.backgroundRepeat = 'repeat, repeat-x';
 document.body.style.backgroundSize = 'auto, auto 2rem';
 document.body.style.backgroundColor = initialValue.currColor.hex;

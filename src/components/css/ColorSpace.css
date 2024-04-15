@@ -20,6 +20,7 @@
   position: relative;
   padding-top: 5.9rem;
   margin-left: 3rem;
+  /* width: 100%; */
   flex-direction: column;
   /* opacity: 1; */
   /* background-color: rgba(0, 0, 0, 0.1); */

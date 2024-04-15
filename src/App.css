@@ -48,17 +48,15 @@ html {
 
 @media screen and (max-height: 798px) {
   html {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 
 @media screen and (max-height: 590px) {
   html {
-    font-size: 8px;
+    font-size: 6.8px;
   }
 }
-
-
 
 
 /* @font-face {  
@@ -67,7 +65,7 @@ html {
 } */
 @font-face {  
   font-family: lixuke;  
-  src: url('./assets/fonts/LiXuKeMaoBiXingShu-yasuo.woff');
+  src: url('./assets/fonts/LiXuKeMaoBiXingShu-yasuo.woff2');
 }
 .icon {
   width: 1em;

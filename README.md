@@ -18,6 +18,7 @@ npm run dev
 - 页面优化
 - 颜色种类扩展
 - 增加配图
+- 手机端复制不生效
 
 ### 参考
 + https://www.zhongguose.com/

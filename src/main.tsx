@@ -6,4 +6,3 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <App />
 )
 
-// 增加诗词api github有star
