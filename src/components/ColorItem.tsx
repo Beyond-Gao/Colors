@@ -66,7 +66,6 @@ const ColorItem: React.FC<Props> = ({ color }) => {
         color.img && 
         color.img?.host ? <img className="figure" src={color.img.host} /> : 
         color.img?.path && <img className="figure" src={`/figure/${color.img.path}`} />
-        // color.figure && <img className="figure" src={`/figure/${color.figure}`} alt="figure" />
         
         }
 
